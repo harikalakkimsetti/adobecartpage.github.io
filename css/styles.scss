@@ -1,0 +1,184 @@
+$colors: (
+  secondary: #333,
+  primary: #ffffff,
+  green: #26ae60,
+  accent: #f9f4f4,
+  red: #e44236,
+  blue: #0abde3,
+);
+
+$sizes: (
+  fontone: 20px,
+  fonttwo: 12px,
+  fontthree: 25px,
+);
+
+body {
+  background-color: map-get($colors, primary);
+  color: map-get($colors, secondary);
+  font-size: map-get($sizes, fonttwo);
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+}
+.product_title {
+  float: left;
+}
+
+.product_text {
+  float: right;
+  border: 2px solid map-get($colors, blue);
+  padding: 10px;
+  margin-right: 20px;
+}
+.product_text .product_button {
+  color: map-get($colors, blue);
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 250px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background: map-get($colors, primary);
+}
+
+.product-card {
+  position: relative;
+  box-shadow: 0 2px 7px map-get($colors, secondary);
+  background: map-get($colors, primary);
+}
+
+.badge {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  text-transform: uppercase;
+  font-size: map-get($sizes, fonttwo);
+  font-weight: 700;
+  background: map-get($colors, green);
+  color: map-get($colors, primary);
+  padding: 3px 10px;
+}
+
+.product-tumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  background: map-get($colors, primary);
+}
+
+.product-tumb img {
+  width: 150px;
+  height: 150px;
+}
+
+.product-bottom-details {
+  overflow: hidden;
+  border-top: 1px solid #eee;
+  background-color: map-get($colors, accent);
+  padding-bottom: 10px;
+  padding-left: 15px;
+}
+.product-details h4 a {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 18px;
+  color: map-get($colors, secondary);
+  text-decoration: none;
+  transition: 0.3s;
+  text-align: left;
+}
+.product-bottom-details div {
+  float: left;
+  width: 50%;
+}
+
+.product-price {
+  font-size: map-get($sizes, fonttwo);
+  color: map-get($colors, secondary);
+  font-weight: 600;
+  text-align: left;
+}
+
+.product-price small {
+  font-size: 80%;
+  font-weight: 400;
+  text-decoration: line-through;
+  display: inline-block;
+  margin-right: 5px;
+  color: map-get($colors, red);
+  margin-right: 20px;
+}
+
+.product-links {
+  text-align: right;
+}
+.product-links a {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  color: map-get($colors, blue);
+  border: 2px solid map-get($colors, blue);
+  transition: 0.3s;
+  font-size: 17px;
+  padding: 5px 10px;
+}
+
+.productcontainer{
+  max-width: 650px;
+  justify-content: space-around;
+  margin:0 auto;
+  margin-top: 50px;
+
+}
+
+.product-header{
+  width: 100%;
+  max-width: 650px;
+  display: flex;
+  font-size: map-get($sizes, fontone );
+justify-content: flex-start;
+border-bottom: 4px solid grey;
+}
+
+.producttitle{
+  width: 45%;
+  text-align: left;
+}
+
+.productprice{
+  width: 15%;  
+  display: flex;
+  //align-items: center;
+}
+.productquantity{
+  width: 25%; 
+}
+
+.producttotal{
+  width: 25%;
+  text-align: right;
+}

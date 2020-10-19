@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adobe Cart</title>
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1 class="product_title">All Cart Items</h1>
+      <p class="product_text">
+        <a class="product_button" href="#" title="View cart">View Cart</a>
+      </p>
+    </header>
+    <main>
+      <div class="products"></div>
+
+      <div id="checkout">
+        <div class="productcontainer">
+          <div class="product-header">
+            <h5 class="producttitle">Item</h5>
+            <h5 class="productprice">PRICE</h5>
+            <h5 class="productquantity">Quantity</h5>
+            <h5 class="producttotal">Total</h5>
+          </div>
+          <div class="display-products"></div>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./cart.js" async defer></script>
+</body>
+
+</html>
